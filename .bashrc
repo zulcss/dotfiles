@@ -126,9 +126,8 @@ fi
 
 
 export EDITOR="vim"
-export PATH=$PATH:~/bin
+export GOPATH=/home/chuck/go
+export PATH=$PATH:~/bin:~/go/bin
 
 alias apt-get='apt'
 alias lxc='lxd.lxc'
-
-
