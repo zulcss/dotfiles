@@ -131,3 +131,20 @@ export PATH=$PATH:~/bin:~/go/bin
 
 alias apt-get='apt'
 alias lxc='lxd.lxc'
+
+gosrc() {
+    cd $GOPATH/src
+    cd ./$1
+}
+
+cleandocker() {
+    for container in $(docker ps -a | awk '/Exited/{ print $1}')
+    do
+        docker rm $contianer
+    done
+
+    for i in $(docker images -f 'dangling=true' -q)
+    do
+        docker rmi $i
+    done
+}
