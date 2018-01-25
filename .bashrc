@@ -148,3 +148,5 @@ cleandocker() {
         docker rmi $i
     done
 }
+
+eval `keychain --eval --agents ssh id_rsa`
