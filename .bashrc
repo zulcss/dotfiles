@@ -151,4 +151,8 @@ cleandocker() {
 
 eval `keychain --eval --agents ssh id_rsa`
 
-source .dockerfunc
+source ~/.dockerfunc
+
+if [ -f  /usr/bin/kubectl ]; then
+    source <(kubectl completion bash)
+fi
