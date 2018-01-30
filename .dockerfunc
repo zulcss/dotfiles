@@ -1,0 +1,7 @@
+#
+# Container aliases
+# 
+elinks() {
+    docker run --rm -it \
+    --name elinks elinks
+}

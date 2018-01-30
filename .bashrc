@@ -127,7 +127,7 @@ fi
 
 export EDITOR="vim"
 export GOPATH=/home/chuck/go
-export PATH=$PATH:~/bin:~/go/bin
+export PATH=$PATH:~/bin:~/go/bin:/usr/lib/go-1.9/bin
 
 alias apt-get='apt'
 alias lxc='lxd.lxc'
@@ -150,3 +150,5 @@ cleandocker() {
 }
 
 eval `keychain --eval --agents ssh id_rsa`
+
+source .dockerfunc
