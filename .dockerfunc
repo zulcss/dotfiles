@@ -3,11 +3,6 @@
 # 
 elinks() {
     docker run --rm -it \
-    --name elinks elinks
+    --name elinks elinks "$@"
 }
 
-helm() {
-    docker run --rm -it \
-        -v "${HOME}/.helm:/root/.helm" \
-        --name helm helm
-}
