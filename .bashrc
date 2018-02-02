@@ -149,7 +149,9 @@ cleandocker() {
     done
 }
 
-eval `keychain --eval --agents ssh id_rsa`
+if [ -f /usr/bin/keychain ]; then
+    eval `keychain --eval --agents ssh id_rsa`
+fi
 
 source ~/.dockerfunc
 
@@ -160,4 +162,7 @@ fi
 virt=$(systemd-detect-virt)
 if [[ "$virt" == "lxc" ]]; then
     PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h(lxc)\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    unalias lxc
 fi
+
+export DEBEMAIL="Chuck Short <zulcss@ubuntu.com>"

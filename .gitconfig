@@ -1,5 +1,8 @@
 [user]
-	email = charles.short@ericsson.com
+	email = zulcss@gmail.com
 	name = Charles Short
 [gitreview]
 	username = zulcss
+
+[url "git+ssh://zulcss@git.launchpad.net/"]
+            insteadof = lp:
