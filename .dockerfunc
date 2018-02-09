@@ -11,3 +11,7 @@ aws() {
         -v "${HOME}/.aws:/root/.aws" \
         aws "$@"
 }
+
+powershell() {
+    docker run -it --rm powershell "$@"
+}
