@@ -1,0 +1,7 @@
+#!/bin/bash
+
+minikube start \
+    --network-plugin=cni \
+    --disk-size 40G \
+    --memory 16384 \
+    --vm-driver kvm2 
