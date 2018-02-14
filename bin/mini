@@ -5,3 +5,10 @@ minikube start \
     --disk-size 40G \
     --memory 16384 \
     --vm-driver kvm2 
+
+if [ -f $HOME/.helm ]; then
+    rm -rf $HOME/.helm
+    helm init
+else 
+    helm init
+fi

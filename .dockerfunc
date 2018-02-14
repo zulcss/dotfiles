@@ -16,8 +16,12 @@ powershell() {
     docker run -it --rm powershell "$@"
 }
 
+nmap() {
+    docker run -it --rm nmap "$@"
+}
+
 firefox() {
-    docker run -d \
+    docker run -i -t \
 		--memory 2gb \
 		--net host \
 		--cpuset-cpus 0 \
@@ -28,7 +32,7 @@ firefox() {
 		-v "${HOME}/Downloads:/root/Downloads" \
 		-v "${HOME}/Pictures:/root/Pictures" \
 		-v "${HOME}/Torrents:/root/Torrents" \
-		-e "DISPLAY=unix${DISPLAY}" \
+		-e "DISPLAY=$DISPLAY" \
 		-e GDK_SCALE \
 		-e GDK_DPI_SCALE \
 		--device /dev/snd \

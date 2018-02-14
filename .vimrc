@@ -24,4 +24,11 @@ filetype plugin indent on    " required
 
 Plugin 'fatih/vim-go'
 
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
+Plugin 'tpope/vim-surround'
+Plugin 'valloric/youcompleteme'
+"Plugin 'klen/python-mode'
+"""Plugin 'cburroughs/pep8.py'
+
+"""let g:pymode_python = 'python3'
+
