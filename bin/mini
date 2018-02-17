@@ -6,6 +6,7 @@ minikube start \
     --memory 16384 \
     --vm-driver kvm2 
 
+sleep 5
 if [ -f $HOME/.helm ]; then
     rm -rf $HOME/.helm
     helm init
