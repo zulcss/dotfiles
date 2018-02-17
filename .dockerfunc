@@ -43,6 +43,6 @@ firefox() {
 
 vagrant() {
     docker run -i -t --rm \
-        -v "${HOME}:/root"
+        -v "${HOME}:/root" \
         vagrant "$@"
 }
