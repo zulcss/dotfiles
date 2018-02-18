@@ -1,0 +1,14 @@
+#!/bin/bash
+
+CURDIR=`pwd`
+SCRIPTDIR=$(cd `dirname $0` && pwd)
+
+cd ~
+[[ ! -L .bashrc ]] && [[ -f .bashrc ]] && mv .bashrc .bashrc.old
+[[ ! -L .bashrc ]] && ln -s $SCRIPTDIR/bashrc .bashrc
+[[ ! -L .docerfunc ]] && ln -s $SCRIPTDIR/.dockerfunc .dockerfunc
+[[ ! -L .lesspipe ]] && ln -s $SCRIPTDIR/.lesspipe .lesspipe
+[[ ! -L .gitconfig ]] && ln -s $SCRIPTDIR/.gitconfig .gitconfig
+[[ ! -L bin && ln -s $SCRIPTDIR/bin bin
+
+cd $CURDIR
