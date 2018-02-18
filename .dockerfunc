@@ -40,9 +40,3 @@ firefox() {
 		--name firefox \
 		firefox "$@"
     }
-
-vagrant() {
-    docker run -i -t --rm \
-        -v "${HOME}:/root" \
-        vagrant "$@"
-}
