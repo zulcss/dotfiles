@@ -1,6 +1,7 @@
 #!/bin/bash
 
 cd ~
+rm -f ~/.bashrc
 ln -s ~/dotfiles/.bashrc .bashrc
 ln -s ~/dofiles/.dockerfunc .dockerfunc
 ln -s ~/dotfiles/.lesspipe .lesspipe
