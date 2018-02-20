@@ -3,8 +3,8 @@
 cd ~
 rm -f ~/.bashrc
 ln -s ~/dotfiles/.bashrc .bashrc
-ln -s ~/dofiles/.dockerfunc .dockerfunc
-ln -s ~/dotfiles/.lesspipe .lesspipe
+ln -s ~/dotfiles/.dockerfunc .dockerfunc
+ln -s ~/dotfiles/.lessfilter .lessfilter
 ln -s ~/dotfiles/.gitconfig .gitconfig
 ln -s ~/dotfiles/bin bin
 
