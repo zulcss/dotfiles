@@ -7,4 +7,5 @@ ln -s ~/dotfiles/.dockerfunc .dockerfunc
 ln -s ~/dotfiles/.lessfilter .lessfilter
 ln -s ~/dotfiles/.gitconfig .gitconfig
 ln -s ~/dotfiles/bin bin
+ln -s ~/dotfiles/config config
 
