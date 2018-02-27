@@ -6,6 +6,11 @@ elinks() {
     --name elinks elinks "$@"
 }
 
+ab() {
+    docker run --net host --rm -i -t \
+        --name ab ab "$@"
+}
+
 aws() {
     docker run -it --rm \
         -v "${HOME}/.aws:/root/.aws" \
