@@ -24,3 +24,7 @@ powershell() {
 nmap() {
     docker run -it --rm nmap "$@"
 }
+
+jq() {
+    docker run -it --rm jq "@"
+}
