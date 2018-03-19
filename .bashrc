@@ -169,3 +169,4 @@ export DEBEMAIL="Chuck Short <zulcss@ubuntu.com>"
 export VAGRANT_DEFAULT_PROVIDER=libvirt
 export LESS='-R'
 export LESSOPEN='|~/.lessfilter %s'
+export DOCKER_ID_USER="zulcss45"
