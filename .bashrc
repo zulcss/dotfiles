@@ -170,3 +170,4 @@ export VAGRANT_DEFAULT_PROVIDER=libvirt
 export LESS='-R'
 export LESSOPEN='|~/.lessfilter %s'
 export DOCKER_ID_USER="zulcss45"
+export GDK_DPI_SCALE=1.33
