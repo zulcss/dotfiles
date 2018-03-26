@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cat << EOF > screenrc
+cat << EOF > .screenrc
 sessionname stack
 hardstatus alwayslastline '%{= .} %-Lw%{= .}%> %n%f %t*%{= .}%+Lw%< %-=%{g}(%{d}%H/%l%{g})'
 setenv PROMPT_COMMAND /bin/true
@@ -12,7 +12,7 @@ for i in $service; do
 	screen=`echo $i | sed -e s:devstack@::g | sed -e s:.service::g`
 	#echo $screen
 	##echo $stuff >> screenrc
-cat << EOF >> screenrc
+cat << EOF >> .screenrc
 screen -t $screen
 stuff "sudo journalctl -a -f --unit $i"
 EOF
