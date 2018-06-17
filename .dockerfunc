@@ -1,11 +1,6 @@
 #
 # Container aliases
 # 
-elinks() {
-    docker run --rm -it \
-    --name elinks elinks "$@"
-}
-
 ab() {
     docker run --net host --rm -i -t \
         --name ab ab "$@"

@@ -26,7 +26,8 @@ Plugin 'fatih/vim-go'
 
 "Plugin 'Valloric/YouCompleteMe'
 Plugin 'tpope/vim-surround'
-Plugin 'valloric/youcompleteme'
+Plugin 'nvie/vim-flake8'
+Plugin 'Valloric/YouCompleteMe'
 "Plugin 'klen/python-mode'
 """Plugin 'cburroughs/pep8.py'
 

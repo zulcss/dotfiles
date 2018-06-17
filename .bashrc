@@ -91,6 +91,7 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias os='openstack'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -171,3 +172,4 @@ export LESS='-R'
 export LESSOPEN='|~/.lessfilter %s'
 export DOCKER_ID_USER="zulcss45"
 export GDK_DPI_SCALE=1.33
+
