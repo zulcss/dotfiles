@@ -132,6 +132,7 @@ export PATH=$PATH:~/bin:~/go/bin:/usr/lib/go-1.9/bin
 
 alias apt-get='apt'
 alias lxc='lxd.lxc'
+alias ab='ansible-bender'
 
 gosrc() {
     cd $GOPATH/src
@@ -173,3 +174,5 @@ export LESSOPEN='|~/.lessfilter %s'
 export DOCKER_ID_USER="zulcss45"
 export GDK_DPI_SCALE=1.33
 
+export GOPATH="$HOME/go"
+export PATH="$PATH:${GOPATH//://bin:}/bin"
