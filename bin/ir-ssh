@@ -1,0 +1,5 @@
+#!/bin/bash
+
+export IR_HOME=~/workspaces/run/localhost
+source ~/workspaces/run/localhost/venv/bin/activate
+ir ssh $1

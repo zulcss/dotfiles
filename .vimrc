@@ -32,4 +32,4 @@ Plugin 'Valloric/YouCompleteMe'
 """Plugin 'cburroughs/pep8.py'
 
 """let g:pymode_python = 'python3'
-
+let g:go_version_warning = 0

@@ -175,4 +175,5 @@ export DOCKER_ID_USER="zulcss45"
 export GDK_DPI_SCALE=1.33
 
 export GOPATH="$HOME/go"
-export PATH="$PATH:${GOPATH//://bin:}/bin"
+export PATH="$PATH:${GOPATH//://bin:}/bin:~/.local/bin"
+
